@@ -65,7 +65,7 @@ const Home: NextPage = () => {
                   <div className="mt-4 flex">
                     {colors.map((color, i) => (
                       <div
-                        key={color}
+                       key={color}
                         className={`p-0.5 rounded-full pt-0.5 relative mr-6 cursor-pointer ${
                           selectedColor === color
                             ? "border-2 border-[#92c83e]"
@@ -96,7 +96,7 @@ const Home: NextPage = () => {
                         role="tablist"
                       >
                         {Object.keys(imageData).map((category, i) => (
-                          <li className="w-[33%]" role="presentation">
+                          <li className="w-[33%]" role="presentation" key={category}>
                             <button
                               className="bg-gray-100 inline-block p-4 border rounded-md hover:text-gray-600 hover:border-gray-100 dark:hover:text-gray-300 w-full"
                               type="button"
